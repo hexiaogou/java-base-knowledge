@@ -4,6 +4,7 @@
 # idea default create file
 .idea/
 *.iml
+out/
 
 # Log file
 *.log
