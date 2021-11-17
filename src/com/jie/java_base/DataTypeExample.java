@@ -33,9 +33,10 @@ public class DataTypeExample {
     }
 
     private static void charCachePool() {
-        for (int i = Integer.parseInt("0000", 16); i <= Integer.parseInt("007F", 16); i++) {
-            char temp = (char) i;
-            System.out.println(temp);
+        for (int i = Integer.parseInt("0000", 16); i <= Integer.parseInt("0080", 16); i++) {
+            char z = (char) i;
+            char k = (char) i;
+            System.out.println(z == k);
         }
     }
 }
