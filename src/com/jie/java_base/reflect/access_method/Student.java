@@ -8,4 +8,8 @@ public class Student extends Person {
     public int getGrade(int year) {
         return 24;
     }
+
+    public void hello(){
+        System.out.println("Student.hello");
+    }
 }
