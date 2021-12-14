@@ -17,6 +17,14 @@ public class Pair<T> {
         return last;
     }
 
+    public void setFirst(T first) {
+        this.first = first;
+    }
+
+    public void setLast(T last) {
+        this.last = last;
+    }
+
     public static <K> Pair<K> create(K first, K last) {
         return new Pair<K>(first, last);
     }
