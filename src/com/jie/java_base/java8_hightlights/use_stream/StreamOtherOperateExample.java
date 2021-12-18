@@ -60,7 +60,7 @@ public class StreamOtherOperateExample {
     }
 
     private static void parallelDeal() {
-        try (Stream<String> lines = Files.lines(Paths.get("test_stream_parallel.log"))) {
+        try (Stream<String> lines = Files.lines(Paths.get("test_stream_parallel.txt"))) {
             long start = System.currentTimeMillis();
             String[] logs = lines.parallel().sorted(String::compareToIgnoreCase).toArray(String[]::new);
             long end = System.currentTimeMillis();
@@ -70,7 +70,7 @@ public class StreamOtherOperateExample {
             e.printStackTrace();
         }
 
-        try (Stream<String> lines = Files.lines(Paths.get("test_stream_parallel.log"))) {
+        try (Stream<String> lines = Files.lines(Paths.get("test_stream_parallel.txt"))) {
             long start = System.currentTimeMillis();
             String[] logs = lines.sorted(String::compareToIgnoreCase).toArray(String[]::new);
             long end = System.currentTimeMillis();
