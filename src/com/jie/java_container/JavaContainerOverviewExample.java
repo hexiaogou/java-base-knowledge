@@ -32,7 +32,7 @@ public class JavaContainerOverviewExample {
         TreeMap treeMap;
         Hashtable hashtable;
         ConcurrentHashMap concurrentHashMap;
-        LinkedHashMap linkedHashMap;
-        HashMap hashMap;
+        LinkedHashMapExample linkedHashMap;
+        HashMapExample hashMap;
     }
 }
